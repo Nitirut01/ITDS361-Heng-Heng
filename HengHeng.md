@@ -20,18 +20,12 @@ functional requirement
 - เครื่องตรวจจับแสงขนาดใหญ่(Mosaicked) จะต้องอ่านค่าเครื่องตรวจจับอย่างครบถ้วน
 - ระบบต้องอนุญาตให้ส่งภาพได้อย่างรวดเร็ว
 
-1. Science observer
+2. Science observer
 
-   `      `- 	มีหน้าที่ในการ อนุมัติ science plan ต่างๆได้
-
-`      `-     ระบบควรจะเป็นรูปเเบบ automated เพื่อทำให้การใช้งานสะดวกมากยิ่งขึ้น
-
-`      `-    สามารถตรวจเช็คเเละทดสอบ science plan ได้ว่าสามารถใช้งานได้จริงหรือไม่
-
-`      `-    มีระบบ observing program โดยนำข้อมูลมาจาก science planเเละเพิ่มเติมข้อมูลทาง  
-
-`           `เทคนิคเพิ่มเข้าไปในprogram เช่น ข้อมูลของเลนส์ต่างๆ เงื่อนไขในการใช้งานอุปกรณ์
-
+- มีหน้าที่ในการ อนุมัติ science plan ต่างๆได้
+- ระบบควรจะเป็นรูปเเบบ automated เพื่อทำให้การใช้งานสะดวกมากยิ่งขึ้น
+- สามารถตรวจเช็คเเละทดสอบ science plan ได้ว่าสามารถใช้งานได้จริงหรือไม่
+- มีระบบ observing program โดยนำข้อมูลมาจาก science planเเละเพิ่มเติมข้อมูลทางเทคนิคเพิ่มเข้าไปในprogram เช่น ข้อมูลของเลนส์ต่างๆ เงื่อนไขในการใช้งานอุปกรณ์
 - สามารถเก็บ Data ที่ได้จากการถ่ายทอดดวงดาวได้ เพื่อใช้ในการตรวจสอบความถูกต้องของข้อมูล
 - สามารถจัดการเกี่ยวกับข้อมูล Astronomer ได้ เช่นการ ลบ/เเชร์/ปรับเปลี่ยนข้อมูล
 - สามารถควบคุมระบบ Telescope ได้
@@ -39,7 +33,7 @@ functional requirement
 - User ควรสามารถสั่งใช้งาน ผ่าน user interface ได้เลย
 - ระบบสามารถเเนะนำเเเละปรับเปลี่ยน Function ตามสถานการณ์ที่ผู้ใช้งานต้องการ 
 
-1. Telescope Operator
+3. Telescope Operator
 - สามารถ validate of serving program ได้
 - สามารถติดตั้ง Physical service เพิ่มได้ เช่น เพิ่ม lens
 - สามารถที่จะออกคำสั่งโดยตรงไปยัง Telescope Control System (TCS) ได้ แม้จะอยู่ในการควบคุมของ planned observing program
@@ -56,11 +50,9 @@ functional requirement
 - สามารถเปิดใช้งานการดำเนินการแบบโต้ตอบโดยตรงได้ แต่จะไม่ถือเป็นโหมดการทำงานปกติ
 - มีสิทธิในการเปลี่ยนแปลง environment โดยการเลือกใช้เครื่องมือที่เหมาะสมร่วมกัน
 
-
-
-1. Support 
+4. Support 
 - มี Built-in Tests ที่ verify การทำงานของ Gemini 8m Telescopes system, software ซึ่งประกอบไปด้วย 
-      1. Modules ที่ทดสอบ normal operation of releases
+  1. Modules ที่ทดสอบ normal operation of releases
   2. Executable self-test sequences 
   3. Regression Tests  
 - Remote Software & On-Site Software ควรทำงานเหมือนกัน
@@ -70,15 +62,15 @@ functional requirement
 - Data storage & Transport จะอยู่ใน format ของ FITS
 - Online access จะใช้ STARCAT
 - Self-Check levels ต่อไปนี้จะต้องใช้ sub-system software
-      1. Monitor Level
-  2. Self-test Level
-  3. System Level
+     1. Monitor Level
+     2. Self-test Level
+     3. System Level
 - Maintenance at Organizational Level จะต้องถูกทำด้วย situ ในช่วงที่มีการทำ observing session และมีการใช้ unit replacement, module replacement
 - Maintenance at Intermediate Level จะถูกทำที่ Base Facility และมีการใช้ module replacement
 - Maintenance at Depot Level จะถูกทำที่ Base Facility ละมีการใช้ module repair
 - Maintenance at Contractor จะถูกทำที่ Contractor / Vendors และมีการ repair / replace
 
-1. Administrator
+5. Administrator
 - ระบบจะต้องควบคุม high level function
 - ระบบต้องสามารถกำหนด และจัดการผู้ใช้ User management.                 
 - ระบบต้องสามารถกำหนดระดับของการทำงาน (operation Level)
@@ -117,13 +109,13 @@ non-functional requirement
 - เวลาที่รองรับสูงสุดสำหรับการอ่านข้อมูลจากตัวตรวจสำหรับการโฟกัสและกิจกรรมที่เกี่ยวข้องประมาณ 0.1 วินาที
 - การถ่ายโอนข้อมูลระหว่างระบบ virtual telescope และเครื่องมือที่เชื่อมต่อต้องมีความต้องการในการถ่ายโอนที่สูงถึง 20-40 Mbits/second
 
-1. Science observer
+2. Science observer
 - ระบบสามารถเข้าถึงการใช้งานได้ง่าย เข้าใจง่ายเเละ ไม่ซับซ้อนในการใช้งาน
 - ระบบสามารถให้ผู้ใช้งานเเสดงความคิดเห็นได้ เพื่อนำคำติชมไปพัฒนาระบบในอนาคต
 - ระบบสามารถสลับfunction ระหว่าง กลางวันเเละกลางคืนได้
 - ระบบมีความเสถียรในระหว่างการใช้งาน
 - ระบบที่ช่วยในการทำงานควรใช้ได้ทั้งใน เเละนอกสถานที่
-1. Telescope Operator
+3. Telescope Operator
 - ระบบควรควบคุมง่าย และตอบสนองอย่างรวดเร็วในสถานการณ์ที่ไม่ปลอดภัย 
 - ระบบสามารถตรวจสอบระบบย่อยทั้งหมดได้ตามต้องการ
 - สามารถเข้าถึงระบบได้หลากหลาย modes พร้อมกันผ่าน observer, monitor และ operator modes
@@ -132,12 +124,12 @@ non-functional requirement
 - ควรมีการตรวจสอบตัวเลือกสำหรับระบบอัตโนมัติในแต่ละ instance ของฟังก์ชัน
 - การเข้าถึงคำสั่งการควบคุมจากระยะไกลควรได้รับอนุญาต โดยมีมาตรการความปลอดภัยเฉพาะจากเจ้าหน้าที่ เช่น การมีปุ่ม "หยุด" ที่เชื่อมต่อแบบสาย, วิดีโอและเสียงแบบเรียลไทม์, และการควบคุมกล้องโทรทรรศน์
 - operations staff มีเจ้าหน้าที่ส่วน 'night assistants' และ 'operations group' รวมอยู่ด้วย
-1. Support 
+4. Support 
 - ระบบควรมี downtime จากการ maintenance ให้น้อยที่สุด
 - ระบบควรมีข้อผิดพลาดที่เกิดจากการ maintenance ให้น้อยที่สุด
 - Workstations ควรเป็นแบบ State-of-the-art system ที่ scalable 
 - Workstations ควร match กับ software standards
-1. Administrator
+5. Administrator
 - ระบบต้องง่ายต่อการใช้งานจะต้องนำเสนอข้อมูลสถานะในรูปแบบที่ทำให้ผู้ดูแลเข้าใจได้ง่ายและชัดเจน
 - ความปลอดภัย (Security) ต้องให้ระบบมีมาตรการความปลอดภัยที่เหมาะสมเพื่อปกป้องข้อมูลและการเข้าถึงที่ไม่ได้รับอนุญาต
 
