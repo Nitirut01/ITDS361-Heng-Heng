@@ -91,6 +91,7 @@ functional requirement
 - ระบบต้องมีความสามารถในการทำการบำรุงรักษาทางไกล (Remote Maintenance Capability)
 - ระบบจะต้องสามารถควบคุมการสังเกตการณ์ช่วงเวลานั้นๆ ณ ปัจจุบัน (Real-time Observation Control)
 - ระบบจะต้องสามารถปรับเปลี่ยนระบบได้ (system modifications)
+- ผู้ใช้จะต้องสามารถสอบถามข้อมูลเกี่ยวกับระบบได้
 
 
 
